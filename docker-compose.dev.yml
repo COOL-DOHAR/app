@@ -6,7 +6,7 @@ services:
     ports: [27018:27017]
     volumes: [accord:/data/db]
   app:
-    container_name: accord_app
+    container_name: eggcord_app
     depends_on: [database]
     build:
       context: ./
